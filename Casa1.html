@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva Pestaña - Inmuebles Arkyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Inmuebles Arkyo</h1>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <button>Volver ▼</button>
+            <div class="menu-content">
+                <a href="index.html">Inicio</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button>Servicios ▼</button>
+            <div class="menu-content">
+                <a href="contacto.html">Contactanos</a>
+
+            </div>
+        </div>
+
+
+        <!-- Botón para activar/desactivar modo lectura -->
+         <button id="modo-lectura-btn" class="boton-modo-lectura">Modo Lectura</button>
+    </nav>
+    <canvas id="Canvas"></canvas>
+    <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+
+    <!-- Canvas para las partículas -->
+    <canvas id="Canvas"></canvas>
+        <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+    <div class="layout">
+
+        <aside class="aside-izquierdo">
+            <img src="https://cdn.pixabay.com/photo/2022/09/05/03/00/architecture-7433140_1280.jpg">
+        </aside>
+
+
+        <main>
+            <!-- 🔹 Carrusel reemplazado -->
+            <section class="carrusel">
+                <div class="slide">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+
+                    <div class="slide-inner">
+                        <div class="slide-item">
+                            <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701566.jpg?rapc=bXZhX2ltYWdl.png" alt="Casa moderna">
+                        </div>
+                        <div class="slide-item">
+                            <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701562.jpg?rapc=bXZhX2ltYWdl.jpg" alt="Casa en el lago">
+                        </div>
+                        <div class="slide-item">
+                            <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701561.jpg?rapc=bXZhX2ltYWdl.jpg" alt="Departamento céntrico">
+                        </div>
+                        <div class="slide-item">
+                            <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701563.jpg?rapc=bXZhX2ltYWdl.jpg" alt="Ejemplo 4">
+                        </div>
+                        <div class="slide-item">
+                            <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701555.jpg?rapc=bXZhX2ltYWdl.jpg" alt="Ejemplo 5">
+                        </div>
+                    </div>
+
+                    <ol class="slide-indicador">
+                        <li><label for="slide-1" class="slide-circulo">•</label></li>
+                        <li><label for="slide-2" class="slide-circulo">•</label></li>
+                        <li><label for="slide-3" class="slide-circulo">•</label></li>
+                        <li><label for="slide-4" class="slide-circulo">•</label></li>
+                        <li><label for="slide-5" class="slide-circulo">•</label></li>
+                    </ol>
+                </div>
+
+                <div class="slide-controls-fixed">
+                    <label for="slide-5" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-5" class="slide-control next control-4">›</label>
+                    <label for="slide-4" class="slide-control prev control-5">‹</label>
+                    <label for="slide-1" class="slide-control next control-5">›</label>
+                </div>
+            </section>
+
+            <!-- 🔹 Contenido principal -->
+            <section>
+                <h2>Departamento</h2>
+                 <p>Departamento moderno con diseño monocromático ubicado en la exclusiva colonia San Jerónimo.</p> 
+                 <p>Cuenta con una distribución inteligente que maximiza cada espacio, ofreciendo un ambiente elegante, minimalista y funcional.</p>
+                 <p>Sus acabados de alta calidad y paleta en tonos neutros brindan una sensación de amplitud y armonía visual.</p> 
+
+<p>Ideal para quienes buscan comodidad y estilo contemporáneo, el inmueble combina iluminación natural, espacios abiertos y detalles arquitectónicos que resaltan la modernidad.</p>
+ <p>La ubicación en San Jerónimo garantiza tranquilidad, excelente conectividad y proximidad a servicios, centros comerciales y áreas verdes.</p>
+                
+                    <!-- Botón para hacer caer partículas -->
+        <button id="botonCaer" class="boton-modo-lectura">Agendar cita de compra</button>
+                </p>
+            </section>
+        </main>
+
+        <aside class="aside-derecho">
+            <img src="https://cdn.pixabay.com/photo/2020/06/07/20/07/moscow-5271909_1280.jpg">
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Reproductor de música de fondo -->
+        <div class="reproductor-musica">
+            <audio controls>
+                <source src="smooth-jazz-cafe-session-1-306314.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+        <h3>Arkyo Inmuebles © 2025</h3>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

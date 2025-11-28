@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inmuebles Arkyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Inmuebles Arkyo</h1>
+    </header>
+
+    <nav>
+        <div class="menu-content">
+            <div class="menu-content">
+                <button> <a href="index.html">Inicio</a></button>
+            </div>
+        </div>
+        <div class="menu">
+            <button>Servicios ▼</button>
+            <div class="menu-content">
+                <a href="index.html">Casas</a>
+                <a href="Lotes.html">Lotes</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button><a href="contacto.html">Contacto </a></button>
+        </div>
+
+        <!-- Botón para activar/desactivar modo lectura -->
+         <button id="modo-lectura-btn" class="boton-modo-lectura">Modo Lectura</button>
+    </nav>
+    <canvas id="Canvas"></canvas>
+    <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+
+    <!-- Canvas para las partículas (agregado para que funcione el JS) -->
+    <canvas id="Canvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: -1;"></canvas>
+
+    <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+
+    <div class="layout">
+        <aside class="aside-izquierdo">
+            <video autoplay muted loop src="https://cdn.pixabay.com/video/2024/04/02/206521_large.mp4" alt="informacion de inicio">
+        </aside>
+
+        <main>
+            <section>
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    En Arkyo Inmuebles estábamos ofreciendo un servicio personalizado de compra de propiedades y lotes de construcción
+                </p>
+                <p>Adquirir tu propiedad esta a un click de distancia</p>
+            </section>
+
+            <!-- SECCIÓN DE PRODUCTOS -->
+            <section class="productos">
+                                <!-- Video de fondo detrás de toda la sección de productos (título + galería) -->
+                <video class="video-fondo" autoplay muted loop playsinline>
+                    <source src="https://cdn.pixabay.com/video/2018/06/06/16650-274413195_large.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                <h2>Propiedades en venta</h2>  
+
+                <div class="galeria">
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/00/90/92/83/52/1200x1200/1109701566.jpg?rapc=bXZhX2ltYWdl.jpg" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Departamento </h3>
+                        <p>$3,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa1.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/47/76/04/42/1200x1200/1563599868.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="Casa en el lago" onclick="window.location.href='Casa2.html'">
+                        <h3>Residencia </h3>
+                        <p>$4,000,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa2.html">detalles</a></button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/45/06/33/27/1200x1200/1556426665.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Casa con piscina</h3>
+                        <p>$3,800,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa3.html">detalles</a> </button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/47/16/87/32/1200x1200/1557289008.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true.jpg" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Casa en el bosque</h3>
+                        <p>$8,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa4.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/46/33/31/64/1200x1200/1529311817.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true.jpg" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Casa minimalista </h3>
+                        <p>$3,900,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa5.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/00/66/85/49/83/1200x1200/1558296586.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true.png" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Casa Moderna</h3>
+                        <p>$4,000,000 MXN</p>
+                        <button class="boton-comprar"><a href="Casa6.html">detalles</a> </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside-derecho">
+            <video autoplay loop muted src="https://cdn.pixabay.com/video/2024/07/13/220941_large.mp4" alt="aside inferior">
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Reproductor de música de fondo -->
+        <div class="reproductor-musica">
+            <audio controls>
+                <source src="smooth-jazz-cafe-session-1-306314.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+        <h3>Arkyo Inmuebles © 2025</h3>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

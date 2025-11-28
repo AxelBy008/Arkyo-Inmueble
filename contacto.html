@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+    </header>
+
+    <nav>
+        <div class="menu-content">
+            <div class="menu-content">
+                <button><a href="#">Inicio</a></button>
+            </div>
+        </div>
+        <div class="menu">
+            <button>Servicios ▼</button>
+            <div class="menu-content">
+                <a href="index.html">Casas</a>
+                <a href="Lotes.html">Lotes</a>
+                <a href="https://www.facebook.com/vivanuncios"></a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button><a href="contacto.html">Contacto</a></button>
+        </div>
+
+        <!-- Botón para activar/desactivar modo lectura -->
+         <button id="modo-lectura-btn" class="boton-modo-lectura">Modo Lectura</button>
+    </nav>
+    <canvas id="Canvas"></canvas>
+    <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+
+    <div class="layout">
+        <aside class="aside-izquierdo">
+                <video autoplay loop muted><source src="https://www.pexels.com/es-es/download/video/7239168/"> </video>
+        </aside>
+
+        <main>
+            <section>
+                <h2>Título de Sección Principal</h2>
+                <p>Contenido aquí. Agrega tu texto o elementos.</p>
+                <p>Otra línea de contenido. Puedes expandir con más párrafos o listas.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1764287779425!6m8!1m7!1sVzO_R3ytTXm4MitLpaxGOg!2m2!1d21.15415231121188!2d-101.6883325582938!3f155.94190962140925!4f5.461762666931705!5f0.7820865974627469" width="650" height="450" style="border:1rem;" allowfullscreen="" loading="laz" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <button id="start-btn">Habla</button>
+                <p id="transcription">Comentarios</p>
+                <script src="scriptvoz.js"></script>
+            </section>
+            
+            
+        </main>
+
+        <aside class="aside-derecho">
+                <video autoplay loop muted><source src="https://www.pexels.com/es-es/download/video/34231477/"> </video>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Reproductor de música de fondo -->
+        <div class="reproductor-musica">
+
+            
+            <audio controls>
+                <source src="smooth-jazz-cafe-session-1-306314.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
+        <h3>Mi Sitio Web © 2025</h3>
+    </footer>
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+ 
+</body>
+</html>

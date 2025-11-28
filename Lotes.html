@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inmuebles Arkyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Inmuebles Arkyo</h1>
+    </header>
+
+    <nav>
+        
+        <div class="menu-content">
+            <div class="menu-content">
+                <button> <a href="index.html">Inicio</a></button>
+            </div>
+        </div>
+        <div class="menu">
+            <button>Servicios ▼</button>
+            <div class="menu-content">
+                <a href="index.html">Casas</a>
+                <a href="Lotes.html">Lotes</a>
+                <a href="https://www.facebook.com/vivanuncios"></a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <button><a href="contacto">Contacto </a></button>
+        </div>
+
+        <!-- Botón para activar/desactivar modo lectura -->
+         <button id="modo-lectura-btn" class="boton-modo-lectura">Modo Lectura</button>
+    </nav>
+    <canvas id="Canvas"></canvas>
+    <div class="traductor" id="traductor">
+        <div id="google_translate_element"></div>
+    </div> 
+        <div class="traductor" id="traductor">
+            <div id="google_translate_element"></div>
+        </div> 
+    <div class="layout">
+        <aside class="aside-izquierdo">
+            <video autoplay loop muted src="https://cdn.pixabay.com/video/2025/03/12/264197_large.mp4" alt="informacion de inicio">
+        </aside>
+
+        <main>
+            <section>
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    En Arkyo Inmuebles estábamos ofreciendo un servicio personalizado de compra de propiedades y lotes de construcción
+                </p>
+                <p>Adquirir tu propiedad esta a un click de distancia</p>
+            </section>
+
+            <!-- SECCIÓN DE PRODUCTOS -->
+            <section class="productos">
+                <!-- Video de fondo detrás de toda la sección de productos (título + galería) -->
+                <video class="video-fondo" autoplay muted loop playsinline>
+                    <source src="https://cdn.pixabay.com/video/2018/06/06/16650-274413195_large.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+                
+                <h2>Lotes en venta</h2>  
+                
+                <div class="galeria">
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/48/05/62/46/1200x1200/1569491921.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" onclick="window.location.href='Casa1.html'">
+                        <h3>Ladera</h3>
+                        <p>$8,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote1.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/48/18/50/72/1200x1200/1572062662.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="https://www.vivanuncios.com.mx/a-venta-terreno/pueblo-san-crisanto/terreno-con-42-m-frente-al-mar-de-san-crisanto-yucatan/148185502?n_src=Listado&n_pg=1&n_pos=11" onclick="window.location.href='Casa2.html'">
+                        <h3>Costa</h3>
+                        <p>$9,200,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote2.html">detalles</a></button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/47/50/32/40/1200x1200/1558008924.jpg?rapc=bXZhX2ltYWdl" alt="https://www.vivanuncios.com.mx/a-venta-terreno/la-mision/terreno-en-venta-en-ensenada-baja-california/147504255?n_src=Listado&n_pg=1&n_pos=15" onclick="window.location.href='Casa1.html'">
+                        <h3>Paso costero</h3>
+                        <p>$4,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote3.html">detalles</a> </button>
+                    </div>
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/45/54/63/67/1200x1200/1506804504.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Paseo morelos</h3>
+                        <p>$15,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote4.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/46/05/32/75/1200x1200/1522461775.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Lomas de el molino 5</h3>
+                        <p>$1,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote5.html">detalles</a> </button>
+                    </div>
+
+                    <div class="producto">
+                        <img src="https://img10.naventcdn.com/avisos/resize/18/01/41/92/15/28/1200x1200/1551362216.jpg?rapc=bXZhX2ltYWdl?isFirstImage=true" alt="Casa moderna" onclick="window.location.href='Casa1.html'">
+                        <h3>Jardin de las alondras</h3>
+                        <p>$9,500,000 MXN</p>
+                        <button class="boton-comprar"><a href="Lote6.html">detalles</a> </button>
+                    </div>
+                    
+                
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside-derecho">
+            <video autoplay loop muted src="https://cdn.pixabay.com/video/2024/08/17/226955_large.mp4" alt="aside inferior">
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Reproductor de música de fondo -->
+        <div class="reproductor-musica">
+
+            
+<audio controls>
+  <source src="smooth-jazz-cafe-session-1-306314.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+
+        </div>
+        <h3>Arkyo Inmuebles © 2025</h3>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
